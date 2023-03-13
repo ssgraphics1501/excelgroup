@@ -1,0 +1,281 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto' sans-serif;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.top_header_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: cadetblue;
+    height: 150px;
+    
+}
+    
+.g_logo{
+    width: 100px;
+}
+
+.logo_name{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 100%;
+    gap: 10px;
+    padding: 1%;
+}
+
+.comp_name{
+    width:auto; 
+    min-width: 240px;
+    display:flex; 
+    justify-content:left; 
+    align-items:center;
+    color: white;
+}
+
+
+/* Nav Style Starts */
+nav ul{
+    width: 100%;
+    background-color: rgb(85,84,84);
+    padding: 0.7rem;
+    height: 2.74rem;
+   
+    list-style-type: none;
+    position: relative;
+    
+}
+
+nav ul li{
+    float: left;
+}
+
+a{
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+    line-height: 0.5rem;
+}
+
+nav a:hover{
+    background-color: rgb(168, 170, 172);
+    border: 1px rgb(255, 255, 255) solid;
+    font-weight: 500;
+    width: 100%;
+    
+}
+
+nav li:hover .sub_menu{
+    display: block;
+}
+
+/* Style for Sub Menu */
+.sub_menu{
+    position: absolute;
+    top: 2rem;
+    width: 15em;
+    height: auto;
+    z-index: 2;
+    display: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+ 
+.menu_holder{
+    flex-basis: 100%;
+    z-index: 6;
+}
+    
+.mobile_view{
+    display: none;
+}
+
+
+.sub_menu li a{
+    width: 15em;
+    background-color: rgb(85, 84, 84);
+    border-bottom: 1px solid white;
+    display: block;
+    padding: 1em 1em;
+    
+}
+
+nav .sub_menu a:hover{
+    background-color: rgb(168, 170, 172);
+}
+
+.nav_container{
+    height: auto;
+    background-color: yellow;
+}
+/* Nav Style ends */
+
+/* Menbu Bar for Mobile starts*/
+.m_bar{
+    display: none;
+}
+
+/* Carousel z-index */
+#carouselExampleIndicators{
+    z-index: 5;
+    height: 40vh;
+}
+
+
+/* Setting height for Carousel */
+.carousel-inner {
+    max-height: 40vh;
+}
+
+#carouselExampleIndicators{
+    max-height: 40vh;
+}
+
+/* Div to hold main content part */
+.middle_part{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text_part{
+    width: 70%;
+    padding-right: 1em;
+    
+}
+
+
+/* Style for Sidebar */
+.side_bar{
+    width: 30%;
+    padding-left: 1em;
+    border-left: 1px dashed red;
+}
+
+/* Style for Form to search book on different criteria */
+.search_book{
+    background-color: rgb(180, 181, 182);
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 95%;
+
+}
+
+.search_book label{
+    width: 100%;
+    text-align: left;
+    display: block;
+}
+
+.search_book input{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+    box-shadow: 2px 2px rgb(187, 185, 185);
+    padding: 0.4em;
+}
+
+.search_book input:focus{
+    background-color: rgba(245, 245, 55, 0.8);
+    caret-color: red;
+}
+
+
+
+/* Universal style of button */
+
+button{
+    width: 5em;
+    background-color: blue;
+    color: white;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 15px #0c0c0c;
+}
+
+button:hover{
+    background-color: black;
+    
+}
+
+/* Style for Footer */
+.footer{
+    background-color: #353434;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1em;
+    margin: auto auto 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+/* Style for inline text to be highleted or having link */
+.highlighter{
+    color: red;
+
+}
+.highlighter{
+    text-decoration: none;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+.i{
+    font-style: italic;
+}
+
+/* Style for Page Header */
+.page_header{
+    
+    margin: 0em 50% 0.5em 0em;
+}
+
+/* Style for Copyright text */
+.comp_name_footer{
+    color:DodgerBlue; 
+    font-size:1.5em
+}
+
+/* Social Icon style */
+
+
+
+.social_icon a{
+    text-decoration: none;
+    
+}
+
+.social_icon a:hover{
+    color:rgb(243, 162, 56);
+}

@@ -1,7 +1,9 @@
 <nav>
     <ul>
         <li> <a href="#">Home</a> </li>
-        <li> <a href="#">Resources <img src="images/down_arrow.png" width="10px"></a> 
+        <li> <a href="#">About Us</a> </li>
+        
+        <!-- <li> <a href="#">Resources <img src="images/down_arrow.png" width="10px"></a> 
             <ul class="sub_menu">
                 <li> <a href="#"> Excel India Publishers</a> </li>
                 <li> <a href="#"> Excel Seminar Solutions</a> </li>
@@ -10,7 +12,10 @@
                 <li> <a href="#"> Excel Technoassignment </a> </li>
             </ul>
     
-        </li>
+        </li> -->
+        <li> <a href="#">Authors</a> </li>
+        <li> <a href="#">Books</a> </li>
+        <li> <a href="gallery.php">Gallery</a> </li>
         <li> <a href="#">Contact Us</a> </li>
     </ul>
 </nav>

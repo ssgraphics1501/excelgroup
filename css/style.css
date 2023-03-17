@@ -5,7 +5,13 @@
 }
 
 body{
-    font-family: 'Roboto' sans-serif;
+    font-family: "Roboto", sans-serif;
+    
+
+}
+
+p{
+    text-align: justify;
 }
 
 h1{
@@ -16,44 +22,148 @@ h1{
 
 .top_header_box{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: cadetblue;
-    height: 150px;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content:left;
+    /* background-color: cadetblue; */
+    height: 241px;
     
 }
+
+.logo_names_holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#e6eaed;
+    height: 18em;
+}
+   
+/* Excel Exceeds Tag line style */
+
+@keyframes excel_exceeds {
     
+    0% {
+        visibility: hidden;
+      }
+      50% {
+        visibility: hidden;
+      }
+      100% {
+        visibility: visible;
+      }
+
+}
+
+
+.excel_exceeds{
+    font-size:1.5em;
+    font-weight:bold;
+    animation: excel_exceeds 2s infinite;
+}
+
+
 .g_logo{
-    width: 100px;
+    width: 35%;
+}
+
+.child_logo{
+    width: 70%;
+}
+
+.child_logo_name{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 10px;
+    padding: 1%;
+    width: 40%;
+
 }
 
 .logo_name{
     display:flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items: center;
-    flex-basis: 100%;
     gap: 10px;
     padding: 1%;
+    width: 58%;
+}
+    
+
+.logo_companies{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.group_names{
+    font-size: 1.3em;
+    
+}
+
+.group_names a{
+    color:black;
+    text-decoration: none;
+}
+
+.group_names a:hover{
+    color:red;
+}
+
+.group_names li{
+    line-height: 150%;
 }
 
 .comp_name{
     width:auto; 
-    min-width: 240px;
+    /* min-width: 240px; */
     display:flex; 
     justify-content:left; 
     align-items:center;
-    color: white;
+    color: black;
+    font-size: 1em;
 }
 
+.child_comp_name{
+    width:auto; 
+    /* min-width: 240px; */
+    display:flex; 
+    justify-content:left; 
+    align-items:center;
+    color: black;
+    font-size: 2em;
+}
+
+.contacts{
+    background-color: #ffec00;
+    padding: 1em;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: right;
+    text-align: left;
+    gap: 2em;
+}
+
+.publisher_logo_name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: left;
+}
 
 /* Nav Style Starts */
 nav ul{
     width: 100%;
-    background-color: rgb(85,84,84);
+    background-color: rgb(255,255,255);
+    color: rgb(85,84,84);
     padding: 0.7rem;
     height: 2.74rem;
-   
+    margin: 0;
     list-style-type: none;
     position: relative;
     
@@ -63,13 +173,22 @@ nav ul li{
     float: left;
 }
 
+nav a{
+    color: rgb(85,84,84);
+}
+
 a{
-    color: white;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color:blue;
 }
 
 nav a{
     text-decoration: none;
-    color: white;
+    color: rgb(163,0,0);
     padding: 0.2rem 1rem;
     font-size: 1.5rem;
     border-radius: 10px;
@@ -140,6 +259,10 @@ nav .sub_menu a:hover{
     height: 40vh;
 }
 
+#carouselExampleIndicators button{
+    box-shadow: none;
+}
+
 
 /* Setting height for Carousel */
 .carousel-inner {
@@ -155,6 +278,7 @@ nav .sub_menu a:hover{
     width: 100%;
     height: auto;
     padding: 1em;
+    padding-right: 0%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -165,22 +289,30 @@ nav .sub_menu a:hover{
     width: 70%;
     padding-right: 1em;
     
+    
+}
+
+.aboutUS{
+    display: none;
 }
 
 
 /* Style for Sidebar */
 .side_bar{
     width: 30%;
-    padding-left: 1em;
+    text-align: center;
+  
+    padding: 1em;
     border-left: 1px dashed red;
 }
 
 /* Style for Form to search book on different criteria */
 .search_book{
-    background-color: rgb(180, 181, 182);
+    /* background-color: rgb(180, 181, 182); */
     padding: 1em;
     border-radius: 0.5em;
-    width: 95%;
+    width: 100%;
+    
 
 }
 
@@ -231,8 +363,11 @@ button:hover{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     padding: 1em;
-    margin: auto auto 0px auto;
+   
+    left: 0;
+    bottom: 0;
     width: 100%;
     height: auto;
 }
@@ -240,15 +375,13 @@ button:hover{
 /* Style for inline text to be highleted or having link */
 .highlighter{
     color: red;
-
-}
-.highlighter{
     text-decoration: none;
+    
+
 }
 
-a{
-    cursor: pointer;
-}
+
+
 
 
 .i{
@@ -267,15 +400,324 @@ a{
     font-size:1.5em
 }
 
+.copyright{
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+
 /* Social Icon style */
 
+.social_icon{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin: 1em 1em 1em 1em;
+}
 
-
+.social_icon i{
+    font-size: 1.5em;
+}
 .social_icon a{
     text-decoration: none;
+    
     
 }
 
 .social_icon a:hover{
     color:rgb(243, 162, 56);
+}
+
+/* Slidding Client Logo  */
+
+.clients_logo_holder{
+    width: 100%;
+    /* background-color: rgb(185, 185, 185); */
+    padding: 0.5em;
+    border-radius: 0.5em;
+    /* border: 1px solid black; */
+}
+
+.our_clients_logo{
+    border: 2px gray solid;
+    width: 100%;
+    height: 5em;
+    overflow: hidden;
+}
+
+.s_image{
+    height: 5em;
+    padding: 1em;
+
+}
+
+/* Work Area */
+.work_area{
+    padding: 1em;
+    background-color: rgb(231, 135, 17);
+}
+
+
+/* Sister Organisation style starts here */
+
+.sister_org_holder{
+    /* height: 350px; */
+    overflow: hidden;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.sister_org{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    min-width: 100%;
+    /* border: 1px solid gray; */
+}
+   
+
+
+
+.companies{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.product_holder{
+    width: 30%;
+    height: 250px;
+    margin-left: 1em;
+    /* background-color: bisque; */
+    padding: 0.5em;
+
+}
+.products{
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.3em;
+    /* background-color: cadetblue; */
+
+}
+
+.prod_items{
+    padding: 0.9em;
+}
+
+/* Our Specialities */
+
+.our_specialities{
+    width: 100%;
+    background-color: coral;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction:column;
+    margin-bottom: 2em;
+}
+
+
+
+.our_specialities img{
+    width: 100%;
+}
+
+/* states_language_clients */
+.states_language_clients{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:first baseline;
+}
+.states_language_clients div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  
+}
+
+
+/* Excel Publisher home Page Styles */
+.publisher_nav{
+    /* background-color: bisque; */
+    height: 20em;
+}
+.publisher_nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    /* background-color: bisque; */
+}
+
+.publisher_nav li{
+    position: relative;
+}
+
+.publisher_nav a{
+    border-radius: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+.publisher_nav a:hover{
+    color : black;
+    background-color: white;
+    
+    
+}
+
+.publisher_nav li:hover div{
+    animation: menu_div 1s forwards;
+    
+   
+}
+
+.menu_border_bottom{
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    margin-top: 0.03em;
+    position: absolute;
+}
+
+@keyframes menu_div {
+    0% {width:0%;}
+    100% {width:100%}
+  }
+
+
+  .publisher_right_column{
+    width: 75%;
+    /* padding-left: 1em; */
+    border-left: 1px red dashed;
+    padding: 1em;
+
+  }
+  
+
+  .publisher_right_column_sectors{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  /* Recent Books */
+  .recent_books{
+    width: 100%;
+    border: 1px red solid;
+  }
+
+table td{
+    border: 1px black solid;
+}
+
+#clientTable tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+.tableHighlight{
+    background-color: #ffec00;
+}
+
+a{
+    color:white;
+}
+
+p > a{
+    color:red;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.testemonial_holder{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 1em;
+    
+}
+
+.testemonial_holder h4{
+    color:red;
+    font-weight: bold;
+    
+}
+
+.testemonial_logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+
+/* Gallery Style starts */
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.gallery_div{
+    width: 30%;
+    border: gray 5px solid;
+}
+
+.gallery_div img{
+    width: 100%;
+}
+
+.gallery_div:hover{
+    
+    border: red 5px solid;
+}
+
+#journals{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+/* Publisher Column Style */
+
+.publisher_left{
+    display:flex;
+    flex-direction:row;
+    width: 25%;
+}
+
+.publisher_right{
+    display:flex;
+    flex-direction:row;
+    width: 25%;
+}
+
+
+
+.proceedings img{
+    width: 100%;
+}
+
+.proceedings div{
+    width: 33%;
+    float: left;
+    padding-right: 1em;
+ 
 }

@@ -1,0 +1,198 @@
+@media screen and (max-width:700px) {
+
+    .top_header_box{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .top_header_box p{
+        text-align: right;
+    }
+
+
+    .logo_name{
+        width: 80%;
+        height: 7em;
+    }
+
+   
+      
+
+    .menu_bar{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+     
+       
+
+    /* Menbu Bar for Mobile starts */
+    .m_bar{
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+        
+        
+        
+
+    .menu_holder{
+        display: none;
+        justify-content:end;
+        padding: 10px;
+        flex-basis: 100%;
+    }
+
+    .g_logo{
+        width: 70px;
+    }
+
+/* Navigation style for mobile view */
+
+    nav {
+        width: 100%;
+        padding: 0%;
+        height: auto;
+        
+    }
+
+    nav ul{
+        padding: 0%;
+        background-color: red;
+        height: auto;
+        display: flex;
+        
+    }
+
+    nav ul li{
+        display: block;
+        align-items: center;
+        flex-basis: 100%;
+        clear: both;
+        height: 50px;
+        line-height: 0.5rem;
+        background-color: rgb(255, 0, 179);
+    }
+
+    nav a{
+        flex-basis: 100%;
+        display: block;
+    }
+
+    .mobile_nav{
+        background-color: rgb(85, 84, 84);
+        
+    }
+
+    .mobile_nav ul{
+        list-style-type: none;
+        margin-bottom: 0;
+        
+    }
+
+    #resources{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile_nav a{
+        text-decoration: none;
+        padding: 0.5em;
+        border-bottom: 1px solid white;
+        display: block;
+    }
+
+    .mobile_nav a:hover{
+        background-color: rgb(168, 170, 172);
+        border: 1px rgb(255, 255, 255) solid;
+        font-weight: 500;
+        width: 100%;
+    }
+    
+    .mobile_view{
+        position: relative;
+        z-index: 7;
+    }
+
+   .mobile_sub_menu{
+    width: 100%;
+    display: none;
+   }
+
+    .mobile_nav ul{
+        width: 100%;
+    }
+
+    /* Wrapping sidebar on mobilescreen */
+
+    .middle_part{
+      
+        flex-direction:column-reverse;
+  
+    }
+
+    .text_part{
+        width: 100%;
+      
+        
+    }
+    
+    
+    /* Style for Sidebar */
+    .side_bar{
+        width: 100%;
+        border-left: none;
+        margin-bottom: 2em;
+     
+    }
+
+    /* Style for Copyright and Social Icon */
+
+    .comp_name_footer{
+         
+        font-size:1.2em;
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: center;
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+
+    
+    .social_icon{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 1em 1em 1em 1em;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+
+
+
+    /* Carousel z-index */
+#carouselExampleIndicators{
+    z-index: 5;
+    height: 28vh;
+}
+
+
+/* Setting height for Carousel */
+.carousel-inner {
+    max-height: 28vh;
+}
+
+#carouselExampleIndicators{
+    max-height: 40vh;
+}
+}

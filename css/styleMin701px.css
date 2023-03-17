@@ -1,0 +1,11 @@
+@media screen and (min-width:701px) {
+
+    .side_bar{
+        width: 40%;
+    }
+
+    .text_part{
+        width: 60%;
+    }
+    
+}
